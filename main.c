@@ -28,8 +28,7 @@ int main(int argc, char **argv){
 	float max_imc = 0.0f;
 	float peso=0.0f;
 	float altura=0.0f;
-	float sum=0.0f;
-	float max_imc=0.0f;
+	float imcActual=0.0f;
 	if(p<=0){
 		printf("numero de personas invalido");
 		exit(1);
@@ -47,9 +46,9 @@ int main(int argc, char **argv){
 				printf("Numero invalido");
 				exit(1);
 			}
-			sum=peso/(altura * altura);
-			if(sum>mayorimc){
-				mayorimc=imc;
+			imcActual=peso/(altura * altura);
+			if(imcActual>max_imc){
+				max_imc=sum;
 			}
 			sum+= peso/(altura * altura);
 			
