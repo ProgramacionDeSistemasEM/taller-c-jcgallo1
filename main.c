@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#nclude <stdlib.h>
 #include <unistd.h>
  
 int main(int argc, char **argv){
@@ -28,7 +28,7 @@ int main(int argc, char **argv){
 	float max_imc = 0.0f;
 	
 	
-	
+	//cambiow
 	
 	//No modifique estas lineas
 	//Guarde los resultados en las 
