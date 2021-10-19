@@ -26,13 +26,43 @@ int main(int argc, char **argv){
 	//Puede declarar más variables si lo necesita.
 	float sum = 0.0f;
 	float max_imc = 0.0f;
-	
-	
-	//cambiow
-	
+	float peso=0.0f;
+	float altura=0.0f;
+	float sum=0.0f;
+	float max_imc=0.0f;
+	if(p<=0){
+		printf("numero de personas invalido");
+		exit(1);
+	}else{
+		for(int i=0 ; i<p;i++){
+			printf("Peso: ");
+			scanf("%.2f",&peso);
+			if(peso<=0){
+				printf("Numero invalido");
+				exit(1);
+			}
+			printf("Altura: ");
+			scanf("%.2f",altura);
+			if(altura<=0){
+				printf("Numero invalido");
+				exit(1);
+			}
+			sum=peso/(altura * altura);
+			if(sum>mayorimc){
+				mayorimc=imc;
+			}
+			sum+= peso/(altura * altura);
+			
+
+		}
+	sum=(sum/p);
+			
+
+	}
+		
 	//No modifique estas lineas
 	//Guarde los resultados en las 
 	//variables sum y max_imc
 	printf("\npromedio IMC: %.1f\n", sum);
 	printf("maximo IMC: %.1f\n", max_imc);
-}
+
