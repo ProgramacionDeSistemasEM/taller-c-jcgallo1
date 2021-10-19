@@ -37,20 +37,20 @@ int main(int argc, char **argv){
 			printf("Peso: ");
 			scanf("%.2f",&peso);
 			if(peso<=0){
-				printf("Numero invalido");
+				printf("Numero invalido\n");
 				exit(1);
 			}
-			printf("Altura: ");
+			printf("\nAltura: ");
 			scanf("%.2f",altura);
 			if(altura<=0){
-				printf("Numero invalido");
+				printf("Numero invalido\n");
 				exit(1);
 			}
 			imcActual=peso/(altura * altura);
 			if(imcActual>max_imc){
 				max_imc=sum;
 			}
-			sum+= peso/(altura * altura);
+			sum+=imcActual;
 			
 
 		}
